@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ProvidersFilter">
+
+    <test name="ProvidersFilter">
+        <classes>
+           <class name="com.uniteus.uiautomation.UniteusUIAutomation.test.ProvidersFilterTest" />
+        </classes>
+    </test>
+    
+</suite>
