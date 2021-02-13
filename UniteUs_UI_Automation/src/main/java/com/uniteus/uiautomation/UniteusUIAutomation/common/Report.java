@@ -32,8 +32,9 @@ public class Report {
     public void startReport() {
     	Date date = new Date(System.currentTimeMillis());
 
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/testReport-"+date+".html");
-        
+	File file = new File(System.getProperty("user.dir") +"/test-output/testReport-"+date+".html");
+	htmlReporter = new ExtentHtmlReporter(file.getAbsolutePath());
+	
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
          
